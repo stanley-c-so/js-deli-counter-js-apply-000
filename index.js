@@ -1,8 +1,8 @@
 
 
-var counter = 1;
+var counter = 0;
 function takeANumber(line) {
-  
+  counter++;
   line.push(counter);
   return `Welcome, you are number ${counter}.`;
  
