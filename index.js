@@ -17,26 +17,18 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  
   let str = "The line is currently";
   
   if (line.length === 0) {
-    
     return str + " empty.";
-    
   } else {
-    
     str += ": ";
-
     for (let i = 0; i < line.length; i++) {
-      
       str += `${i+1}. ${line[i]}`;
-      
       if (i !== line.length - 1) {
         str += ", ";
       }
     }
-    
     return str;
   }
   
