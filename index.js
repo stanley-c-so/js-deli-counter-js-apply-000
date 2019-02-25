@@ -1,6 +1,10 @@
-function takeANumber(line, newPerson) {
-  line.push(newPerson);
-  return `Welcome, ${newPerson}. You are number ${line.length} in line.`;
+
+var counter = 0;
+
+function takeANumber(line) {
+  counter++;
+  line.push(counter);
+  return `Welcome, you are number ${counter}.`;
 }
 
 function nowServing(line) {
